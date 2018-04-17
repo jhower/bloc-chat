@@ -4,9 +4,6 @@
     <button type="button" class="new-room" ng-click="home.addRoom()">New Room</button>
   </div>
   <div class="sidebar-body" ng-repeat="room in home.rooms">
-
-
-
     <p class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.$value }}</p>
   </div>
 </div>
@@ -19,5 +16,9 @@
     <div class="username">{{ message.username }}</div>
     <div class="timestamp">{{ message.sentAt }}</div>
     <div class="user-message">{{ message.content }}</div>
+  </div>
+  <div class="message-field">
+    <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="home.newMessage.content" style="width:500px;">
+    <button class="btn-new-message" type="button" ng-click="home.sendMessage()">Send message</button>
   </div>
 </div>
