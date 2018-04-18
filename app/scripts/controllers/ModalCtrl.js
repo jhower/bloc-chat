@@ -6,6 +6,7 @@
     };
 
     modal.createRoom = function () {
+      console.log(modal.newRoom);
       Room.add(modal.newRoom);
       $uibModalInstance.close();
     };

@@ -4,7 +4,7 @@
     <button type="button" class="new-room" ng-click="home.addRoom()">New Room</button>
   </div>
   <div class="sidebar-body" ng-repeat="room in home.rooms">
-    <p class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.$value }}</p>
+    <p class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</p>
   </div>
 </div>
 

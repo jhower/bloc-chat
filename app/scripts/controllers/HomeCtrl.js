@@ -1,6 +1,7 @@
 (function() {
   function HomeCtrl(Room, Message, $uibModal, $cookies) {
     var home = this;
+    console.log(Room, Message);
     home.rooms = Room.all;
     home.currentRoom = null;
     home.currentUser = $cookies.get('blocChatCurrentUser')
